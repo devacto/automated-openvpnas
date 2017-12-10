@@ -1,4 +1,4 @@
-# AWS AUTOMATED OpenVPN AS (ACCESS SERVER)
+# AWS Automated OpenVPN AS (ACCESS SERVER)
 
 - [SUPPORTED REGIONS](#supported-regions)
 - [CAVEATS](#caveats)
@@ -6,15 +6,15 @@
 - [STACK DEPLOYMENT](#stack-deployment)
 - [LICENSE](#license)
 
-## PURPOSE
+## Purpose
 
 This project takes the basic steps maintained at [Amazon Web Services EC2 Community Appliance Quick Start Guide](https://docs.openvpn.net/how-to-tutorialsguides/virtual-platforms/amazon-ec2-appliance-ami-quick-start-guide/) at bit further by automating the entire deployment with a few security tweaks using AWS CloudFormation. This stack also configures VPC Flow Logs and EC2 Systems Manager
 
-## SUPPORTED REGIONS
+## Supported Regions
 
 All regions listed in the [Amazon Web Services EC2 Community Appliance Quick Start Guide](https://docs.openvpn.net/how-to-tutorialsguides/virtual-platforms/amazon-ec2-appliance-ami-quick-start-guide/) are supported.
 
-## CAVEATS
+## Caveats
 
 While this CloudFormation template will get you started a bit quicker than OpenVPN's [Amazon Web Services EC2 Community Appliance Quick Start Guide](https://docs.openvpn.net/how-to-tutorialsguides/virtual-platforms/amazon-ec2-appliance-ami-quick-start-guide/), depending on what you are trying to accomplish further configuration will probably be required.
 
@@ -22,7 +22,7 @@ Also, I haven't included any examples of how to connect to the OpenVPN AS instan
 
 Finally, if you are looking to use Let's Encrypt take a look at my other Github project [here.](https://github.com/virtualjj/automated-openvpnas-cloudflare-letsencrypt)
 
-### PREPARATION
+### Preparation
 
 You will need an EC2 Key Pair in order to successfully deploy this CloudFormation stack. Basic insructions on how to do this can be found [here.](http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-key-pairs.html#having-ec2-create-your-key-pair) A more secure method would be to create your own, password protect the private key, store the keys separately from the password (eg. passphrase in [KeePass](http://keepass.info/), key pairs stored locally with backups), and upload the public key to AWS. Basic instructions to get you started with creating your own key pairs can be found [here.](http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-key-pairs.html#having-ec2-create-your-key-pair)
 
@@ -32,7 +32,7 @@ This stack configures EC2 Systems Manager so you can use the *Secure String* fea
 <img src="https://github.com/virtualjj/automated-openvpnas/blob/master/images/readme/prepstep-000-parameter-store-example.jpg" alt="Parameter Store secure string example." height="75%" width="75%">
 </p>
 
-### STACK DEPLOYMENT
+### Stack Deployment
 
 1. Login to your AWS account and select the region that you want to deploy the OpenVPN AS instance. This is very important as its easy to accidentally open tabs in other regions.
 
