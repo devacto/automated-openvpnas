@@ -1,4 +1,4 @@
-# AWS Automated OpenVPN AS (ACCESS SERVER)
+# AWS Automated OpenVPN Access Server
 
 - [SUPPORTED REGIONS](#supported-regions)
 - [CAVEATS](#caveats)
