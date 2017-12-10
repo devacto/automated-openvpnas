@@ -1,10 +1,9 @@
 # AWS Automated OpenVPN Access Server
 
-- [SUPPORTED REGIONS](#supported-regions)
-- [CAVEATS](#caveats)
-- [PREPARATION](#preparation)
-- [STACK DEPLOYMENT](#stack-deployment)
-- [LICENSE](#license)
+- [Supported Regions](#supported-regions)
+- [Caveats](#caveats)
+- [Preparation](#preparation)
+- [Stack Deployment](#stack-deployment)
 
 ## Purpose
 
